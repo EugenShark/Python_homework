@@ -4,4 +4,5 @@ def div_func(a, b):
     except ZeroDivisionError:
         return 'На ноль делить нельзя!'
 
+
 print(div_func(int(input('Введите первое число')), int(input('Введите второе число'))))
