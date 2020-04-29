@@ -1,4 +1,4 @@
-dictionary = {'One' : 'Один', 'Two' : 'Два', 'Three' : 'Три', 'Four' : 'Четыре'}
+dictionary = {'One': 'Один', 'Two': 'Два', 'Three': 'Три', 'Four': 'Четыре'}
 new_txt = []
 with open("text_4.txt") as read:
     for i in read:
