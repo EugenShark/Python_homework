@@ -15,14 +15,11 @@ class Car:
     def turn(self, direction):
         print(f"Машина {self.name} повернула на{direction}")
 
-    def show_speed(self, speed):
-        print(f"Скорость автомобиля {self.name} {speed}км/ч")
+    def show_speed(self):
+        print(f"Скорость автомобиля {self.name} {self.speed}км/ч")
 
 
 class TownCar(Car):
-
-    def __init__(self, speed, color, name, is_police):
-        super().__init__(speed, color, name, is_police)
 
     def show_speed(self):
         if self.speed > 60 and self.is_police is False:
@@ -44,19 +41,16 @@ d.stop()
 
 class SportCar(Car):
 
-    def __init__(self, speed, color, name, is_police):
-        super().__init__(speed, color, name, is_police)
+    pass
 
 
 e = SportCar(210, "Blue", "Bob", False)
 e.go()
 e.turn("право")
+e.show_speed()
 
 
 class WorkCar(Car):
-
-    def __init__(self, speed, color, name, is_police):
-        super().__init__(speed, color, name, is_police)
 
     def show_speed(self):
         if self.speed > 40 and self.is_police is False:
@@ -73,5 +67,6 @@ f.turn("право")
 
 class PoliceCar(Car):
 
-    def __init__(self, speed, color, name, is_police):
-        super().__init__(speed, color, name, is_police)
+    pass
+
+
